@@ -7,7 +7,7 @@ Automatically reads information from the `produtos.csv` file and writes it to th
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/bysedd/Power-Up.git
+   git clone https://github.com/bysedd/PowerUp.git
    ```
 
 2. Install the dependencies:
