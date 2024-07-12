@@ -37,7 +37,6 @@ class Bot:
         self.products = Utils.read_file(self.FILE_PATH)
         self.header = self.products.pop(0).split(",")
         self.elements = Utils.mount_elements(self.header)
-        self.elements["submit"] = 'button[type="submit"]'
 
     def open_site(self):
         """
@@ -56,7 +55,7 @@ class Bot:
         for column_name, selector in self.elements.items():
             element = self.driver.find_element(value=selector)
             element.send_keys(split_product[self.header.index(column_name)])
-        self.driver.find_element(by="css selector", value=self.elements["submit"]).click()
+        self.driver.find_element(by="css selector", value='button[type="submit"]').click()
 
     def write(self):
         """

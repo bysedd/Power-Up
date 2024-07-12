@@ -22,7 +22,7 @@ class Utils:
         return [line.strip() for line in content]
 
     @staticmethod
-    def mount_elements(column_names: list[str]) -> dict:
+    def mount_elements(column_names: list[str]) -> dict[str, str]:
         """
         Mounts a dictionary of elements from a list of column names.
 
